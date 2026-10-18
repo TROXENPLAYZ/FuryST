@@ -11,7 +11,7 @@
   "kv_namespaces": [
     {
       "binding": "SITE_CONTENT",
-      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+      "id": "#12Gh!$$"
     }
   ],
   "observability": { "enabled": true }
