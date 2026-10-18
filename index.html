@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111410">
+<meta name="description" content="Follow the development of Elyndor, an ambitious voxel fantasy RPG in development.">
+<title>Elyndor — A World Taking Shape</title>
+<style>
+:root{color-scheme:dark;--bg:#111410;--panel:#191d17;--ink:#eee8d8;--muted:#b6b5a7;--gold:#d9bd7b;--line:#3b4234;--green:#849777}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid #ffffff18}.brand{font-size:1.1rem;letter-spacing:.22em;font-weight:800;text-decoration:none}.brand span{color:var(--gold)}
+.navlinks{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.navlinks a{text-decoration:none;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--gold)}
+.hero{position:relative;isolation:isolate;min-height:580px;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(17,20,16,.98) 0%,rgba(17,20,16,.82) 48%,rgba(17,20,16,.35) 100%),radial-gradient(ellipse at 75% 40%,#687657 0%,#313c2c 25%,#151a14 64%)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background-image:linear-gradient(135deg,transparent 48%,#c3b184 49%,transparent 50%),linear-gradient(45deg,transparent 48%,#c3b184 49%,transparent 50%);background-size:80px 80px;mask-image:linear-gradient(90deg,transparent,black)}
+.hero-content{padding:92px 0;max-width:740px}.eyebrow{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;font-weight:700}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(3.3rem,9vw,7.2rem);line-height:.95;letter-spacing:-.045em;margin:22px 0}h1 span{color:var(--gold)}.lead{max-width:590px;color:#d0d0c4;font-size:1.13rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-weight:700}.btn.primary{background:var(--gold);border-color:var(--gold);color:#171811}.btn:hover{transform:translateY(-1px)}
+.statusbar{border-bottom:1px solid var(--line);background:#171b15}.statusgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}.status{background:#171b15;padding:20px}.status small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem}.status strong{display:block;margin-top:4px;font-size:1rem}
+section{padding:76px 0}.section-head{max-width:700px;margin-bottom:30px}h2{font:500 clamp(2rem,5vw,3.5rem)/1.08 Georgia,serif;margin:10px 0 16px}.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.icon{font-size:1.4rem;color:var(--gold)}.card h3{margin:12px 0 8px;font-size:1.1rem}.card p{color:var(--muted);margin:0}
+.progress{display:grid;grid-template-columns:1fr 1fr;gap:18px}.progress-panel{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:8px}.progress-panel h3{margin:0 0 14px}.list{list-style:none;margin:0;padding:0}.list li{padding:10px 0;border-bottom:1px solid #ffffff12;color:#d7d7cb}.list li:last-child{border-bottom:0}.check{color:var(--green);padding-right:10px}.working{color:var(--gold);padding-right:10px}
+.notice{border-left:3px solid var(--gold);padding:14px 18px;background:#1b1e17;color:var(--muted);font-size:.92rem;margin-top:20px}
+.cta{background:linear-gradient(120deg,#242c20,#171b15);border:1px solid var(--line);border-radius:10px;padding:clamp(26px,6vw,54px);display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{max-width:600px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero{min-height:500px}.hero-content{padding:70px 0}.statusgrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.progress{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}section{padding:56px 0}}
+</style></head>
+<body>
+<header class="wrap nav"><a class="brand" href="#" aria-label="Elyndor home">ELY<span>N</span>DOR</a><nav class="navlinks" aria-label="Main navigation"><a href="#world">The vision</a><a href="#progress">Progress</a><a href="#community">Community</a></nav></header>
+<main>
+<section class="hero"><div class="wrap hero-content"><div class="eyebrow">An independent game in development</div><h1>A world<br><span>taking shape.</span></h1><p class="lead">Elyndor is an ambitious voxel fantasy RPG built around exploration, survival, crafting and progression. The world is being built one system at a time.</p><div class="actions"><a class="btn primary" href="#progress">Follow development</a><a class="btn" href="#community">Join the community ↗</a></div></div></section>
+<div class="statusbar"><div class="wrap statusgrid"><div class="status"><small>Current phase</small><strong>Core world foundation</strong></div><div class="status"><small>Engine</small><strong>Godot 4.7.2</strong></div><div class="status"><small>Current focus</small><strong>Streaming performance</strong></div></div></div>
+<section id="world"><div class="wrap"><div class="section-head"><div class="eyebrow">The vision</div><h2>Built for exploration.<br>Designed to grow.</h2><p class="muted">Elyndor aims to combine the freedom of a voxel world with the progression of a fantasy RPG. These are the pillars guiding development—not a claim that every feature is already implemented.</p></div><div class="cards">
+<article class="card"><div class="icon">◇</div><h3>A changing world</h3><p>Procedurally generated voxel terrain and streamed chunks designed to support a vast world.</p></article>
+<article class="card"><div class="icon">⌁</div><h3>Survive & create</h3><p>A planned loop of gathering, mining, crafting, equipment and settlement building.</p></article>
+<article class="card"><div class="icon">✧</div><h3>Fantasy progression</h3><p>Long-term plans for combat, enemies, abilities, elemental powers and RPG progression.</p></article>
+</div></div></section>
+<section id="progress" style="background:#151914;border-block:1px solid var(--line)"><div class="wrap"><div class="section-head"><div class="eyebrow">Development log</div><h2>The real work, step by step.</h2><p class="muted">A transparent look at what's working and what still needs attention.</p></div><div class="progress">
+<div class="progress-panel"><h3><span class="check">✓</span>Working foundations</h3><ul class="list"><li><span class="check">✓</span>Voxel terrain streaming prototype</li><li><span class="check">✓</span>Player walking and jumping</li><li><span class="check">✓</span>Ground collision detected during testing</li></ul></div>
+<div class="progress-panel"><h3><span class="working">◷</span>In active development</h3><ul class="list"><li><span class="working">↗</span>Reducing stutter when exploring new terrain</li><li><span class="working">↗</span>Profiling chunk generation and collision work</li><li><span class="working">↗</span>Verifying world persistence and streamed edits</li></ul></div></div><div class="notice">Early development: systems and priorities can change. No release date is being announced yet.</div></div></section>
+<section id="community"><div class="wrap"><div class="cta"><div><div class="eyebrow">Be part of the journey</div><h2>Help shape the community around Elyndor.</h2><p class="muted">Follow development, share feedback and invite friends who love games and world-building.</p></div><div class="actions"><a class="btn primary" href="https://discord.com/" target="_blank" rel="noreferrer">Discord invite ↗</a><a class="btn" href="https://x.com/" target="_blank" rel="noreferrer">Follow on X ↗</a></div></div><p class="muted" style="margin-top:14px;font-size:.85rem">Replace the placeholder Discord and X links with your official community URLs before sharing this site.</p></div></section>
+</main><footer><div class="wrap foot"><span>© <span id="year"></span> Elyndor · In development</span><span>Built for a world still taking shape.</span></div></footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body></html>
