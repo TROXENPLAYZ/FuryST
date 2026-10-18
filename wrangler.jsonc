@@ -11,7 +11,7 @@
   "kv_namespaces": [
     {
       "binding": "SITE_CONTENT",
-      "id": "ELYNDOR_SITE_CONTENT"
+      "id": "15ca9e184b1546fab674ff43b62b9eee"
     }
   ],
   "observability": { "enabled": true }
