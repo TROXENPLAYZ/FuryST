@@ -8,5 +8,11 @@
     "binding": "ASSETS",
     "not_found_handling": "404-page"
   },
+  "kv_namespaces": [
+    {
+      "binding": "SITE_CONTENT",
+      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+    }
+  ],
   "observability": { "enabled": true }
 }
